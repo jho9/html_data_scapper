@@ -1,5 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+
 def get_columns(table):
     columns = table[0].text.split(sep = '\n')
     columns.remove('')
